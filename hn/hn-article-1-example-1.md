@@ -4,7 +4,7 @@ AICS AI Command Script
 Natural language structured instructions for building AI apps.
 
 == SETUP ==
-
+d
 App-Name: Hello World
 Author: Bill Smith
 Description: A simple greeting app
