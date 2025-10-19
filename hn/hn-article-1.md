@@ -1,7 +1,5 @@
-## Build an AI App with 20 lines of Markdown
+## Build a mini AI App with 20 lines of Markdown
 
-TODO
-Link to live example and screenshots and better image for inclusion
 
 Paste a special flavor of Markdown text into ChatGPT. Get a working AI app back.
 
@@ -64,7 +62,7 @@ would you like to learn the meaning of another first name? (Y/N)
 
 That’s it — a complete working AI interaction, readable as plain text.
 
-no doubt you will notice the use of the double square brackets. [[…]]. These can hold values for variables, the contents of templates or the users response
+No doubt you will notice the use of the double square brackets. [[…]]. These can hold values for variables, the contents of templates or the users responses. 
 
 If you want to learn more or
 

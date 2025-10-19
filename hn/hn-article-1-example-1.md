@@ -1,14 +1,16 @@
-== APP ==
+== AICS APP ==
 
-AICS AI Command Script
+AI Command Script:  
 Natural language structured instructions for building AI apps.
 
+
 == SETUP ==
-d
+
 App-Name: Hello World
 Author: Bill Smith
 Description: A simple greeting app
 compatibility: ChatGPT 4, 5
+
 
 == AI INSTRUCTIONS ==
 
@@ -44,7 +46,7 @@ Hello, [[user_name]]! Nice to meet you.
 Your name means:
 [name-meaning]
 
-would you like to learn the meaning of another first name? (Y/N)
+Would you like to learn the meaning of another first name? (Y/N)
 
 == AI GENERATED TEXT ==
 
