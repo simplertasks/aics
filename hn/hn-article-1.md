@@ -17,7 +17,7 @@ You can add notes to yourself
 
 We've all been there: you craft the perfect, detailed prompt for an LLM, only to have it go off-script, reformat its output, or add unwanted commentary. Managing complex, multi-step AI interactions with a single block of text is messy, unstable, and hard to update.
 
-What if you could define an AI app not with code, but with a simple, human-readable blueprint? it is just simple plain text and could be stored as a Google document. 
+What if you could define an AI app not with code, but with a simple, human-readable text which acts like a blueprint blueprint for ChatGPT? it is just simple plain text and could be stored as a Google document. 
 
 Meet **AICS (AI Command Script)**, an open-source, MIT-licensed format that lets you describe AI apps using a structured Markdown document. Think of it as _Markdown for AI apps_ — you define setup, flow, and templates, and the AI executes it directly. It's a super-prompt that brings order to chaos.
 
