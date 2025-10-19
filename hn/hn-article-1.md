@@ -8,6 +8,9 @@ It preserves history
 It is easy to share and work collaboratively
 Google stock works well on mobile especially for things like select all
 Google AI assistant will help you with markdown
+you can update it easily for users
+
+
 
 
 
