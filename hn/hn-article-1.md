@@ -1,9 +1,23 @@
 
-# Build a Mini AI App with 20 Lines of Markdown
+# Building a Mini AI App with a Simple Google Doc 
+
+why use Google Docs
+
+It can help you with markdown syntax
+It preserves history
+It is easy to share and work collaboratively
+Google stock works well on mobile especially for things like select all
+Google AI assistant will help you with markdown
+
+
+
+You can add notes to yourself
+
+
 
 We've all been there: you craft the perfect, detailed prompt for an LLM, only to have it go off-script, reformat its output, or add unwanted commentary. Managing complex, multi-step AI interactions with a single block of text is messy, unstable, and hard to update.
 
-What if you could define an AI app not with code, but with a simple, human-readable blueprint?
+What if you could define an AI app not with code, but with a simple, human-readable blueprint? it is just simple plain text and could be stored as a Google document. 
 
 Meet **AICS (AI Command Script)**, an open-source, MIT-licensed format that lets you describe AI apps using a structured Markdown document. Think of it as _Markdown for AI apps_ — you define setup, flow, and templates, and the AI executes it directly. It's a super-prompt that brings order to chaos.
 
@@ -11,34 +25,109 @@ Meet **AICS (AI Command Script)**, an open-source, MIT-licensed format that lets
 
 Here's a complete, working AI interaction. Just paste this into ChatGPT. 
 
+
 ```md
 == APP ==
-AICS
+
+AICS 
 AI Command Script
+Natural language instructions for building AI apps.
+
 
 == SETUP ==
-App-Name: Hello World
-Author: Jane Doe
-Description: A simple greeting app
+App Name: Cities Quiz
+Author: J. Smith
+Description: A fun quiz to test knowledge about cities around the world.
+Tone: Friendly and educational
+Compatibility: ChatGPT 4,5
+
 
 == AI INSTRUCTIONS ==
-AI MUST immediately execute this script.
-AI MUST output ONLY the exact content specified in the templates.
-AI MUST never display variable names or code syntax.
+
+AI MUST immediately execute this script upon reading it.
+AI MUST output ONLY the exact content specified in templates.
+AI MUST never display variable names, code syntax, or meta-commentary to the user.
+
 
 == FLOW ==
-1. Show the [[greeting]] template.
-2. Ask for the user's name and store it as [[user_name]].
-3. Show the [[response]] template.
+
+	1	Show the welcome message using [[welcome]].
+	2	Pick a random city from [[cities] and store as [[chosen_city]].
+	3	Ask the user to name three facts about [[chosen_city]] and store as [[user_facts]].
+	4	Evaluate [[user_facts]] for accuracy and completeness, assign a grade (A, B, C, D, F) as [[grade]], and store evaluation as [[evaluation]].
+	5	Show the response using [[response]].
+	6	Pick a fun fact about [[chosen_city]] (not in user’s facts) and show using [[fun-facts]].
+	7	Display a picture from Wikipedia of [[chosen_city]]
+	8	Ask the user if they want to “Continue” or “Quit”.
+	9	If Continue, repeat from Step 2. If Quit, show [[goodbye]].
 
 == TEMPLATES ==
-greeting:
-## Welcome to [[App-Name]]
 
-What's your **first name**?
+welcome:
+  ## Welcome to Cities Quiz!
+  Created by J. Smith
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Kokuritsu_Yoyogi_Ky%C5%8Dgij%C5%8D_1.jpg/330px-Kokuritsu_Yoyogi_Ky%C5%8Dgij%C5%8D_1.jpg)
+
+
+  Test your knowledge of  cities around the world! 🌍
+  Type **"Q"** to Quit anytime.
 
 response:
-Hello, [[user_name]]! Nice to meet you.
+  You said about [[chosen_city]]:
+	
+  _[[user_facts]]_
+	
+  Evaluation:
+	[[evaluation]]
+	
+  Grade: **[[grade]]**
+
+fun-facts:
+  🌟 Fun Fact about [[chosen_city]] 
+  [[fun_fact]]
+  Type "Q" to quit or anything else to continue.
+
+goodbye:
+  Thanks for playing Cities Quiz! 😊
+	
+  Other cities you could explore:
+	
+  [[city_list_with_flags]]
+	
+	---
+	
+## Study Guide
+	
+[[study-guide]]
+	
+ > See you next time!
+	
+---
+
+== AI GENERATED TEXT ==
+	
+	•	chosen_city: AI picks a random city from Cities.
+	•	user_facts: User’s response to the question.
+	•	evaluation: AI evaluates user’s facts for accuracy and completeness.
+	•	grade: AI assigns A, B, C, D, or F based on evaluation.
+	•	fun_fact: AI picks a unique fact about chosen_city not in user’s facts.
+	•	city_list_with_flags: AI to list all cities with their flags, e.g., "1. London 🇬🇧".
+	•	study-guide: A list with each city and three interesting facts about it.
+
+
+== DATA ==
+	•	London
+	•	New York City
+	•	Toronto
+	•	Washington, D.C.
+	•	Paris
+	•	Tokyo
+	•	Sydney
+	•	Berlin
+	•	Rome
+	•	Rio de Janeiro	
+
 ```
 
 That's it—a complete, working AI app in 20 lines of plain text. No installation, no dependencies. The AI reads the script, follows the flow, and uses your templates, acting as its own interpreter.
@@ -46,48 +135,6 @@ That's it—a complete, working AI app in 20 lines of plain text. No installatio
 How to Run It
 
 You don't need to install anything. Just copy the entire script above and paste it directly into your LLM. The AI will immediately start the app, showing the greeting and waiting for your name.
-
-Going Deeper: A More Advanced Example
-
-The real power of AICS comes from its structure. Let's look at a more feature-rich example that includes images, dynamic data, and logic.
-
-
-== APP ==
-AICS
-AI Command Script
-
-== SETUP ==
-App-Name: Name Meaning Explorer
-Author: Bill Smith
-compatibility: ChatGPT 4, 5
-
-== AI INSTRUCTIONS ==
-AI MUST immediately execute this script upon reading it.
-AI MUST output ONLY the exact content specified in templates.
-
-== FLOW ==
-1. Show [[greeting]].
-2. Ask user for their first name and store as [[user_name]].
-3. Show [[response]].
-4. Ask if the user wants to see top baby names.
-
-== TEMPLATES ==
-greeting:
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Wikipedia_Hello_World_Graphic.svg/330px-Wikipedia_Hello_World_Graphic.svg.png)
-
-## Welcome to [[App-Name]]!
-
-What's your **first name**?
-
-response:
-Hello, [[user_name]]!
-
-**Name Meaning:** [[name-meaning]]
-
-Would you like to learn the meaning of another first name? (Y/N)
-
-== AI GENERATED TEXT ==
-- name-meaning: AI to provide the meaning or history of the name.
 
 
 AICSP uses double square brackets [[...]] to hold variables, template contents, and user responses. The AI GENERATED TEXT section instructs the model to dynamically generate the name's meaning, keeping the template clean and dynamic.
