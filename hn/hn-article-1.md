@@ -1,7 +1,7 @@
 
 # Build a Mini AI App with 20 Lines of Markdown
 
-We've all been there: you craft the perfect, detailed prompt for an LLM, only to have it go off-script, reformat its output, or add unwanted commentary. Managing complex, multi-step AI interactions with a single block of text is messy, unstable, and hard to share.
+We've all been there: you craft the perfect, detailed prompt for an LLM, only to have it go off-script, reformat its output, or add unwanted commentary. Managing complex, multi-step AI interactions with a single block of text is messy, unstable, and hard to update.
 
 What if you could define an AI app not with code, but with a simple, human-readable blueprint?
 
@@ -9,7 +9,7 @@ Meet **AICS (AI Command Script)**, an open-source, MIT-licensed format that lets
 
 ## The Entire "Hello World" App
 
-Here's a complete, working AI interaction. Just paste this into ChatGPT or any capable LLM.
+Here's a complete, working AI interaction. Just paste this into ChatGPT. 
 
 ```md
 == APP ==
@@ -90,7 +90,7 @@ Would you like to learn the meaning of another first name? (Y/N)
 - name-meaning: AI to provide the meaning or history of the name.
 
 
-This script uses double square brackets [[...]] to hold variables, template contents, and user responses. The AI GENERATED TEXT section instructs the model to dynamically generate the name's meaning, keeping the template clean and dynamic.
+AICSP uses double square brackets [[...]] to hold variables, template contents, and user responses. The AI GENERATED TEXT section instructs the model to dynamically generate the name's meaning, keeping the template clean and dynamic.
 
 Why AICS Beats a Plain Prompt
 

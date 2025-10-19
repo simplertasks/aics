@@ -6,7 +6,7 @@ Natural language structured instructions for building AI apps.
 
 == SETUP ==
 
-App-Name: Hello World
+App-Name: What's Your Name?
 Author: Bill Smith
 Description: A simple greeting app
 compatibility: ChatGPT 4, 5
@@ -43,8 +43,7 @@ greeting:
 response:
 Hello, [[user_name]]! Nice to meet you.
 
-Your name means:
-[name-meaning]
+> [name-meaning]
 
 Would you like to learn the meaning of another first name? (Y/N)
 
