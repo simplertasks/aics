@@ -28,8 +28,9 @@ AI MUST never display variable names, code syntax, or meta-commentary to the use
 4. Evaluate [[user_facts]] for accuracy and completeness, assign a grade (A, B, C, D, F) as [[grade]], and store evaluation as [[evaluation]].
 5. Show the response using [[response]].
 6. Pick a fun fact about [[chosen_city]] (not in user’s facts) and show using [[fun-facts]].
-7. Ask the user if they want to “Continue” or “Quit”.
-8. If Continue, repeat from Step 2. If Quit, show [[goodbye]].
+7. Display a picture from Wikipedia of [[chosen_city]]
+8. Ask the user if they want to “Continue” or “Quit”.
+9. If Continue, repeat from Step 2. If Quit, show [[goodbye]].
 
 
 == TEMPLATES ==
@@ -90,8 +91,7 @@ goodbye:
 == DATA ==
 
 cities:
-- London,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/320px-Albert_Einstein_Head.jpg
-
+- London
 - New York City
 - Toronto
 - Washington, D.C.
