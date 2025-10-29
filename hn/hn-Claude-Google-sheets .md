@@ -12,7 +12,7 @@ The AI Everywhere Problem
 Every tool now has an “AI.”
 But each one is different — different prompts, different contexts, different results.
 Knowledge is trapped inside conversations, not shared across teams.
-Just because AI is everywhere doesn’t mean it’s useful.
+Just because AI is everywhere doesn’t mean it’s useful or efficient and might actually be counterproductive.
 
 AICS is the missing connective tissue.
 It gives people a standard way to describe, share, and reuse AI behavior across any model or platform.
