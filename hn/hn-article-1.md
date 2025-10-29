@@ -1,6 +1,9 @@
 
 # Building a Mini AI App with a Simple Google Doc 
 
+What if you could define an AI app not with code, but with a simple, human-readable text which acts like a blueprint blueprint for ChatGPT? it is just simple plain text and could be stored as a Google document. 
+
+
 why use Google Docs
 
 It can help you with markdown syntax
@@ -9,20 +12,29 @@ It is easy to share and work collaboratively
 Google stock works well on mobile especially for things like select all
 Google AI assistant will help you with markdown
 you can update it easily for users
-
-
-
-
+You can translate the entire instruction into another language
 
 You can add notes to yourself
+you can collaboratively work on a document at the same time. 
 
 
 
 We've all been there: you craft the perfect, detailed prompt for an LLM, only to have it go off-script, reformat its output, or add unwanted commentary. Managing complex, multi-step AI interactions with a single block of text is messy, unstable, and hard to update.
 
-What if you could define an AI app not with code, but with a simple, human-readable text which acts like a blueprint blueprint for ChatGPT? it is just simple plain text and could be stored as a Google document. 
+
 
 Meet **AICS (AI Command Script)**, an open-source, MIT-licensed format that lets you describe AI apps using a structured Markdown document. Think of it as _Markdown for AI apps_ — you define setup, flow, and templates, and the AI executes it directly. It's a super-prompt that brings order to chaos.
+
+# 🌍 The Vision
+
+AICS turns plain documents into living, data-driven AI applications.  
+Each one runs directly in ChatGPT — the model is the runtime, and the text is the code.  
+
+That means anyone can build, edit, and share an AI app without writing a line of syntax.  
+You can link live data from Google Sheets, enforce consistent outputs with templates,  
+and archive your logic like any other document.  
+
+The result is a new kind of software: **transparent, collaborative, and versionable AI systems that live in everyday tools.**
 
 ## The Entire "Hello World" App
 
@@ -143,7 +155,7 @@ You don't need to install anything. Just copy the entire script above and paste 
 
 ### 🧭 Summary
 
-`[[ ]]` is the universal handle in **AICS** — it can **store**, **recall**, **generate**, or **display** content depending on where it appears.  
+`[[ ]]` is the universal placeholder in **AICS** — it can **store**, **recall**, **generate**, or **display** content depending on where it appears.  
 
 In short: **FLOW writes**, **TEMPLATES read**, **AI GENERATED invents**, and **DATA supplies**.
 
