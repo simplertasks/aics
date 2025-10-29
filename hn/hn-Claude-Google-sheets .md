@@ -1,4 +1,23 @@
-**Great structure! Let me help you polish this and fill in the gaps:**
+** Rob  NOTES **
+
+
+The cost to develop AI software (custom) varies widely. For example, one article says a “simple solution” might start around USD $10,000, but more complex tech can exceed USD $200,000.  ￼https://www.uptech.team/blog/ai-cost
+
+
+---
+from ChatGPT
+
+The AI Everywhere Problem
+
+Every tool now has an “AI.”
+But each one is different — different prompts, different contexts, different results.
+Knowledge is trapped inside conversations, not shared across teams.
+Just because AI is everywhere doesn’t mean it’s useful.
+
+AICS is the missing connective tissue.
+It gives people a standard way to describe, share, and reuse AI behavior across any model or platform.
+Instead of dozens of disconnected assistants, you get one coherent language for intelligent workflows.
+
 
 -----
 
