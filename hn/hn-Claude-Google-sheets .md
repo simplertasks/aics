@@ -19,6 +19,14 @@ It gives people a standard way to describe, share, and reuse AI behavior across 
 Instead of dozens of disconnected assistants, you get one coherent language for intelligent workflows.
 
 
+
+Already a No-Code IDE in Disguise
+
+You’re right: Docs now supports dropdowns, variables, comment threads, templates, tables, smart chips, data validation, and live Drive integrations.
+Those aren’t just formatting tools — they’re structured input controls.
+They let a user express decisions, states, or parameters without writing code.
+
+
 -----
 
 # The Future of AI Apps Is Far Simpler Than You Think
