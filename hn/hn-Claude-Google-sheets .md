@@ -74,7 +74,7 @@ AICS (AI Command Script) is an open-source format that lets you define AI applic
 
 Individuals and companies face a bewildering array of AI options: ChatGPT subscriptions, AI assistants embedded in MS Office and Google Workspace, no-code platforms, and expensive custom-built applications.
 
-**Here an AI, there an AI, everywhere an AI.**
+**Here an AI, there an AI, everywhere an AI.** 🎵🎶
 
 While impressive and often helpful individually, these tools share critical limitations:
 
