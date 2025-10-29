@@ -141,7 +141,49 @@ How to Run It
 You don't need to install anything. Just copy the entire script above and paste it directly into your LLM. The AI will immediately start the app, showing the greeting and waiting for your name.
 
 
-AICSP uses double square brackets [[...]] to hold variables, template contents, and user responses. The AI GENERATED TEXT section instructs the model to dynamically generate the name's meaning, keeping the template clean and dynamic.
+### 🧭 Summary
+
+`[[ ]]` is the universal handle in **AICS** — it can **store**, **recall**, **generate**, or **display** content depending on where it appears.  
+
+In short: **FLOW writes**, **TEMPLATES read**, **AI GENERATED invents**, and **DATA supplies**.
+
+---
+
+### 💡 The different uses of `[[ ]]`
+
+1. **Template call / flow trigger**  
+   - Appears in **FLOW**  
+   - Tells the model to show a specific template.  
+   - Example: `Show [[greeting]]`
+
+2. **User input variable**  
+   - Appears in **FLOW** and later in **TEMPLATES**  
+   - Stores what the user enters, so it can be reused.  
+   - Example:  
+     `Ask user for their first name and store as [[user-name]]`  
+     Later shown as: `Hello, [[user-name]]!`
+
+3. **Static variable placeholder**  
+   - Appears in **TEMPLATES**  
+   - Inserts information already defined in the Setup section (like author or app name).  
+   - Example: `> by: [[author]]`
+
+4. **AI-generated field**  
+   - Appears in **TEMPLATES**  
+   - Instructs the AI to dynamically create or summarize content.  
+   - Example: `> [[name-meaning]]`
+
+5. **Data reference**  
+   - Appears in **TEMPLATES**  
+   - Expands a table or dataset from the **DATA** section.  
+   - Example: `[[Friends]]`
+
+6. **Instructional or control field**  
+   - Appears in **FLOW** or **AI GENERATED**  
+   - Influences *how* the AI performs an action without showing text to the user.  
+   - Example:  
+     `respond with [[respond-length]]`  
+     where `respond-length` = “Briefly, 1–2 sentences summary”.
 
 Why AICS Beats a Plain Prompt
 
