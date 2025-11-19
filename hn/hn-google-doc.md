@@ -14,9 +14,8 @@ ___
 
 ## The AI Everywhere Problem
 
-Spend an hour using your phone or computer today and you will witness a pattern: an AI here, an AI there, here an AI, there an AI—everywhere an AI!
+Spend an hour using your phone or computer today and you will witness a pattern: an AI here, an AI there - everywhere an AI!
 
-That would be fine if we were interested in Old MacDonald's farm animals. But we aren't running a nursery rhyme; we are running businesses. We are talking about personal productivity and enterprise efficiency.
 
 The current landscape is defined by fragmentation. We have powerful tools, but they are trapped in silos. Each one is different—different prompts, different contexts, different results. Knowledge is trapped inside fleeting conversations that are rarely shared across teams.
 
@@ -119,6 +118,15 @@ Custom AI apps often come with clunky, unfamiliar dashboards. AICS runs inside s
 Perhaps most importantly, the data source for these apps is often a simple Google Sheet. In traditional software, data is locked away in hidden SQL databases that only developers can touch. Here, the "database" is a spreadsheet the user is already familiar with. They can refer to it, verify the AI's answers, or update the data anytime they want—without needing a ticket from IT.
 
 By building on top of the documents and spreadsheets teams use every day, we stop asking users to learn new tools and start empowering them with the ones they already own.
+
+
+…having a portable Google Doc you can paste into any LLM is genuinely liberating. If OpenAI raises prices 10x tomorrow, you just paste your doc into Claude. Try doing that with a custom Retool app.
+
+### A Note on Data Security
+If you're working with proprietary data, use Gemini through a Google 
+Workspace account with appropriate data protection agreements. If your 
+organization already trusts Google Workspace with confidential documents, 
+AICS apps running on Gemini inherit that same security posture.
 
 ## The Forgiving Syntax & The AI Co-Pilot
 
