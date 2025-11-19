@@ -84,7 +84,7 @@ By standardizing these sections, we stop treating AI prompts like magic spells a
 
 ## Beyond Simple AI Apps: Google Docs as an IDE
 
-While a text file is useful, a **Google Doc** is a superpower. When we treat the Google Doc as the **IDE** (Integrated Development Environment), we unlock features that usually take developers weeks to build:
+While a text AICS file is useful, a **Google Doc** is a superpower. When we treat the Google Doc as the **IDE** (Integrated Development Environment), we unlock features that usually take developers weeks to build:
 
 1.  **UI Controls as Input Validation:** You can use **Insert > Dropdown** in Google Docs to create fixed lists. When you feed this to the AI, it forces strict input parameters, preventing user error before the script even runs.
 2.  **Tables as Databases:** Google Docs supports Tables. To an AI, a table is a structured database. You can paste a dataset into the document, and the AI can query, filter, and format that data instantly.
@@ -149,6 +149,8 @@ You can literally ask the AI to write its own instructions:
 
 The AI will generate the code, you paste it into your Doc, and you are live. If something doesn't work, you simply paste the script back into the chat and ask, *"Why is this getting stuck?"* and the AI will debug itself.
 
+I am in the process of building an AICS validator, and of course it'll be written in AICS language. it will perform many checks on the syntax and format of the document and point out any fixes to the author of the document. 
+
 
 
 ## AICS and Google Docs are not a magic bullet
@@ -173,6 +175,23 @@ You can see exactly what the AI thought, where the logic drifted, and how the us
 
 A common concern might be the security of data but for Google workplace users they already trust their data to Google so why wouldn't they trust it to google Gemini
 f an organization already uses Google Workspace (which >80 % of enterprises and millions of SMBs do), then Gemini for Workspace is explicitly designed and sold for exactly this kind of use.
+
+## Future Possibilities: From Workaround to Native Platform
+
+AICS works well today because modern LLMs can already interpret its clean structure reliably. well I believe it might receive some traction if enough people or companies thought it was useful there is something that would change ita adoption completely and greatly improve it. 
+
+
+
+That same structure makes native support trivial for Google, Anthropic, or OpenAI.
+One toggle on their side would:
+	•	Replace probabilistic parsing with a hard-coded deterministic executor
+	•	Turn FLOW into real code, DATA into a proper database, TEMPLATES into enforced output
+	•	Add persistent memory, audit logs, and Workspace permissions
+
+The creator still writes in plain AICS English; at runtime it becomes bulletproof.
+If adoption grows organically, any major provider could ship native AICS support in weeks — instantly solving the last real objection (occasional non-determinism) and locking in the Missing Middle for good.
+AICS isn’t just a clever hack. It’s one decision away from being the native format for lightweight agentic apps.
+
 
 ## Conclusion
 
