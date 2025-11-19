@@ -38,6 +38,8 @@ In the tech world, "complex" is often mistaken for "valuable." Worst of all, bus
 > Most modern software is "licensed," not sold. Whether it is a SaaS subscription or a massive CRM, you are a tenant, not an owner. You have zero rights to fix bugs, add features, or take the code with you if you leave. You are locked into their roadmap and their pricing.
 >
 > Worse, if you stop paying the monthly rent, you are evicted. You are often forced to scramble to back up your data—or more likely, you lose it altogether. This "vendor lock-in" makes switching platforms a nightmare, even if you find a better tool.
+
+Note that AI script will work as a plain text file a document an Excel sheet a markdown file. 
 >
 > **But a Google Doc? You own that.**
 >
@@ -88,7 +90,7 @@ While a text file is useful, a **Google Doc** is a superpower. When we treat the
 
 ## The Advantages
 
-The AICS approach solves two of the biggest problems in current GenAI usage: **Hallucination** and **Portability**.
+The AICS approach helps to solves two of the biggest problems in current GenAI usage: **Hallucination** and **Portability**.
 
 ### 1. Data Sovereignty (RAG-Lite)
 You can explicitly instruct the AICS script to operate within specific constraints. By adding a command like *"Only answer using the information provided in the DATA section,"* you create a lightweight **RAG (Retrieval-Augmented Generation)** system. The AI stops guessing and starts retrieving from your verified tables, making the output trustworthy enough for business use.
@@ -110,6 +112,8 @@ AICS bypasses this friction by leveraging tools the user already mastered years 
 
 **1. The Document *Is* the Help File**
 Because the "code" is written in plain English, the application is self-explanatory. You don't need a technical manual. If a user wants to know why the AI gave a specific answer, they just read the Google Doc. The instructions for the machine serve as the instructions for the human.
+
+if you want you can create a help document inside of a ICS but it is probably just as good to let the large model explain whatever question the user has. 
 
 **2. The Interface is Universal**
 Custom AI apps often come with clunky, unfamiliar dashboards. AICS runs inside standard chat interfaces (like ChatGPT). Interacting with a Large Language Model is a skill most people already possess. If you know how to text, you know how to run this app.
