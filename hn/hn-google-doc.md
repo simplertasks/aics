@@ -223,6 +223,19 @@ Because the structure is standardized (SETUP, FLOW, DATA), it makes native suppo
 
 The creator still writes in plain AICS English; at runtime, it becomes bulletproof. AICS isn’t just a clever hack. It’s one decision away from being the native format for lightweight agentic apps.
 
+I recall when lotus 123 and Excel became prominent in businesses it wasn't because they were a new programming tool, it was because ordinary users could do things once reserved for programmers and that is what I hope AICS offers to the world
+
+
+## The Hope for AICS
+
+In 1983, Lotus 1-2-3 didn't create millions of new programmers. 
+It did something more valuable: it gave business users direct access 
+to capabilities that previously required hiring a programmer.
+
+Perhaps through wide spread adoption by users and AI companies AICS might have a similar fate, that is my hope. 
+
+
+
 ## Conclusion
 
 We are entering an era where "coding" is simply "writing clearly."
