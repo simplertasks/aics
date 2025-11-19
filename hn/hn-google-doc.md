@@ -196,6 +196,11 @@ These are the thousands of daily business problems that are too complex for a bl
 
 **AICS is the Goldilocks solution.** It is just right for this missing middle.
 
+???
+Out of section about creating a quiz for one thing and then ChatGPT created a quiz for something completely out and mention it was not one of those goofy fill in the blank multiple-choice tests but form the foundation of university education
+
+
+
 ### The Problem with "Custom GPTs"
 You might ask, "Isn't this what Custom GPTs or AI Agents are for?"
 In theory, yes. In practice, no.
