@@ -1,7 +1,7 @@
 
 # Google Docs as an AI Platform
 
-### The Zero-Code Revolution You Already Own
+### The Low Friction Zero-Code AI App Solution You Already Own
 
 -----
 
