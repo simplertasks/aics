@@ -7,13 +7,11 @@
 
 ## TL;DR
 
-- **The Problem:** The Problem: While 90% of employees are already using ChatGPT for work tasks, they’re limited to one-off queries. There’s no easy way for business users to build reusable, shareable AI workflows without learning to code.
-
-- **The Solution:** **AICS (AI Command Script)**. A framework that turns Google Docs/Sheets into executable AI software.
-- **The Advantage:** You own the app (it’s your file), deployment is instant (click “Share”), and the learning curve is flat.
-- **The Scale:** While the example below is simple, AICS integrates with Google Sheets to process massive datasets. (Part 2 covers advanced applications.)
 
 -----
+??? that point to acknowledge it could be just a super prompt but when combined with data from Google sheets, the features of Google Docs and Google sheets it's much more than a super prompt
+
+
 
 ## Introduction
 
@@ -22,11 +20,8 @@ Spend an hour on your iPhone or your computer and you'll notice one thing. there
 
 Gmail suggests email responses, Sheets offers AI-powered formulas, Word has Copilot, and every search engine now has an AI summary feature. Each tool offers tremendous power—but these AI capabilities are locked inside their respective products.
 You can’t share your AI workflow. You can’t combine the AI from Gmail with the AI from Sheets. You can’t export the logic and use it elsewhere. The AI assists you, but you don’t control it.
-This article presents an alternative: AICS (AI Command Script)—a framework that puts AI logic into a document and spreadsheets you already own, making it shareable, portable, and independent of any single vendor. Best of all you don't have to be a programmer or set up complex hosted applications. 
-
-
-
-
+This article presents an alternative: AICS (AI Command Script)—a framework that puts AI logic into a document and spreadsheets you already own, making it shareable, portable, and independent of any single vendor. Best of all you don't have to be a programmer or set up complex hosted applications- and you own the source code for any AI application you built this way. 
+Oh boy keep your own car
 ## See It In Action
 
 **Don’t read about it. Try it.**
