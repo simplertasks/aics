@@ -7,12 +7,25 @@
 
 ## TL;DR
 
-- **The Problem:** Studies show most AI pilot projects fail to deliver ROI. Building AI apps usually requires Python, APIs, and hosting—locking out business users.
-- **The Solution:** **AICS (AI Command Script)**. A framework that turns Google Docs into executable AI software.
+- **The Problem:** The Problem: While 90% of employees are already using ChatGPT for work tasks, they’re limited to one-off queries. There’s no easy way for business users to build reusable, shareable AI workflows without learning to code.
+
+- **The Solution:** **AICS (AI Command Script)**. A framework that turns Google Docs/Sheets into executable AI software.
 - **The Advantage:** You own the app (it’s your file), deployment is instant (click “Share”), and the learning curve is flat.
 - **The Scale:** While the example below is simple, AICS integrates with Google Sheets to process massive datasets. (Part 2 covers advanced applications.)
 
 -----
+
+## Introduction
+
+Spend an hour on your iPhone or your computer and you'll notice one thing. there is an AI here, an AI there, and an AI everywhere.🎵
+
+
+Gmail suggests email responses, Sheets offers AI-powered formulas, Word has Copilot, and every search engine now has an AI summary feature. Each tool offers tremendous power—but these AI capabilities are locked inside their respective products.
+You can’t share your AI workflow. You can’t combine the AI from Gmail with the AI from Sheets. You can’t export the logic and use it elsewhere. The AI assists you, but you don’t control it.
+This article presents an alternative: AICS (AI Command Script)—a framework that puts AI logic into a document and spreadsheets you already own, making it shareable, portable, and independent of any single vendor. Best of all you don't have to be a programmer or set up complex hosted applications. 
+
+
+
 
 ## See It In Action
 
@@ -29,53 +42,8 @@ Copy the text from the Doc, paste it into ChatGPT, Claude, or Gemini, and watch 
 
 ## What You Just Saw
 
-That Google Doc contains **AICS (AI Command Script)**—a structured format that LLMs can parse and execute reliably.
+That Google Doc contains **AICS (AI Command Script)**—a structured format that LLMs can parse and execute reliably. see appendix a for text representation of the Google document.  
 
-Here’s the complete source code of the demo you just ran:
-
-```text
-SETUP
-App-Name: What's Your Name?
-Author: Jay Sinclair
-
-AI INSTRUCTIONS
-- Execute immediately
-- Output ONLY template content
-- Never show code to user
-- Render Markdown
-
-FLOW
-1. Show [[greeting]]
-2. Ask for first name, store as [[user_name]]
-3. If [[user_name]] is "Albert", show [[albert]]
-4. Show [[response]]
-5. Thank user
-
-TEMPLATES
-greeting:
-## Welcome to [[App-Name]]!
-What's your **first name**?
-
-response:
-Hello, [[user_name]]!
-[name-meaning]
-
-albert:
-![Einstein](image-url)
-Contact Albert's friends:
-[[Friends]]
-
-AI GENERATED
-name-meaning: Provide the history of the name
-
-DATA
-Friends:
-Name          | Email
-Alice Smith   | alice@example.com
-Bob Johnson   | bob@example.com
-```
-
-That’s it. Plain English instructions that any LLM can execute.
 
 -----
 
@@ -241,7 +209,55 @@ nature_fact:
 
 -----
 
-# Appendix A: AICS Protocol Specification (v1.0)
+# APPENDIX A:
+Here’s the complete source code of the demo you just ran:
+
+```text
+SETUP
+App-Name: What's Your Name?
+Author: Jay Sinclair
+
+AI INSTRUCTIONS
+- Execute immediately
+- Output ONLY template content
+- Never show code to user
+- Render Markdown
+
+FLOW
+1. Show [[greeting]]
+2. Ask for first name, store as [[user_name]]
+3. If [[user_name]] is "Albert", show [[albert]]
+4. Show [[response]]
+5. Thank user
+
+TEMPLATES
+greeting:
+## Welcome to [[App-Name]]!
+What's your **first name**?
+
+response:
+Hello, [[user_name]]!
+[name-meaning]
+
+albert:
+![Einstein](image-url)
+Contact Albert's friends:
+[[Friends]]
+
+AI GENERATED
+name-meaning: Provide the history of the name
+
+DATA
+Friends:
+Name          | Email
+Alice Smith   | alice@example.com
+Bob Johnson   | bob@example.com
+```
+
+That’s it. Plain English instructions that any LLM can execute.
+
+
+# Appendix B: AICS Protocol Specification (v1.0)
 
 **AICS (AI Command Script)** is a platform-agnostic, natural language markup protocol designed to define the logic, user interface, and data constraints of an AI-driven application within a single flat file.
 
@@ -330,4 +346,6 @@ The AICS interpreter (the LLM) operates as a state machine:
 1. **Resolution:** The cycle continues until the `FLOW` dictates a termination state.
 
 -----
+
+
 
